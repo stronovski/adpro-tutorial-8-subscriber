@@ -9,3 +9,7 @@ AMQP adalah Advanced Message Queuing Protocol yang digunakan untuk melakukan per
 ### Add the screen capture of yours, and answer why the total number of queue is as such
 ![alt text](image.png)
 Pada gambar di atas, dapat dilihat bahwa terdapat lebih dari 40 queued message pada suatu saat. Hal ini karena terdapat line of code thread::sleep(ten_millis); yang diuncomment, sehingga program akan sleep selama beberapa milisekon dan memerlukan waktu yang lebih panjang untuk mengelola event di dalam message queue.
+
+### Put your capture in the readme.md, and also add some explanation/reflection of why it is like that. Take a look at the code of publisher and subscriber,do you see something to improve?
+![alt text](image-1.png)
+Setiap subscriber mendapatkan data yang berbeda dan berfungsi sebagai aplikasi yang terpisah saat publisher mengirimkan data ke banyak message queue. Dengan hal itu, data yang sudah diambil dari message queue tidak akan bisa digunakan oleh aplikasi lain. Alternatif lain untuk meningkatkan performa adalah dengan mengimplementasikan program tersebut secara multithreading agar dapat mengelola banyak event dalam satu waktu.
