@@ -1,0 +1,1 @@
+C:\Users\Asus\OneDrive\Desktop\Sasha\Kuliah\Sem\ 4\adpro\ after\ uts\adpro-tutorial-8-subscriber\subscriber\target\debug\subscriber.exe: C:\Users\Asus\OneDrive\Desktop\Sasha\Kuliah\Sem\ 4\adpro\ after\ uts\adpro-tutorial-8-subscriber\subscriber\src\main.rs
